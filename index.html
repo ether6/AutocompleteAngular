@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html data-ng-app="app">
+<head>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" />
+</head>
+<body>
+
+    <div style="width: 600px">
+        <div class="form-group row">
+            <label class="col-md-3" for="searchLot">Search Fruit:</label>
+            <div class="col-md-9" autocomplete targetmodel="target" datasource="searchFruits" ></div>
+        </div>
+        <div class="row">
+            <label class="col-md-3" for="target">Target:</label>
+            <div class="col-md-9">
+                <input class="form-control" type="text" ng-model="target">
+            </div>
+        </div>
+    </div>
+    <!-- Vendor Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+
+    <!-- app Services -->
+    <script src="app.js"></script>
+    <script src="autocomplete-directive.js"></script>
+</body>
+</html>
